@@ -18,4 +18,5 @@ app.use("/api/auth", require("./routes/auth"));
 
 const PORT = process.env.PORT || 5000;
 
+//Listen port and run on that port
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
