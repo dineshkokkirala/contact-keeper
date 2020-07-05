@@ -1,6 +1,7 @@
 const jwt = require("jsonwebtoken");
 const config = require("config");
 
+//Middleware must contains next() method
 module.exports = function (req, res, next) {
   //Get token from header
   const token = req.header("x-auth-token");
